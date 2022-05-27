@@ -1,0 +1,101 @@
+.include "m32def.inc"
+		; Initialize Stack Pointer
+		LDI		R16,HIGH(RAMEND)
+		OUT		SPH,R16
+		LDI		R16,LOW(RAMEND)
+		OUT		SPL,R16
+
+		;Initialize PORTA as OUTPUT
+		LDI		R16,0xFF
+		OUT		DDRA,R16
+		;Initialize Low Nibble of PORTB as OUTPUT
+		LDI		R16,0x0F
+		OUT		DDRB,R16
+		
+		;Displaying 1 on the 0XXX 7Segment
+BEGIN:	LDI		R16,0b11111110
+		OUT		PORTB,R16
+		LDI		R16,1
+		CALL	CONVERT
+		OUT		PORTA,R16
+		CALL	DELAY
+		
+		;Displaying 3 on the X0XX 7Segment
+		LDI		R16,0b11111101
+		OUT		PORTB,R16
+		LDI		R16,4
+		CALL	CONVERT
+		OUT		PORTA,R16
+		CALL	DELAY
+
+		;Displaying 9 on the XX0X 7Segment
+		LDI		R16,0b11111011
+		OUT		PORTB,R16
+		LDI		R16,0
+		CALL	CONVERT
+		OUT		PORTA,R16
+		CALL	DELAY
+		
+		;Displaying 8 on the XXX0 7Segment
+		LDI		R16,0b11110111
+		OUT		PORTB,R16
+		LDI		R16,0
+		CALL	CONVERT
+		OUT		PORTA,R16
+		CALL	DELAY
+
+		RJMP	BEGIN
+
+DELAY:	LDI		R17,0x1
+L1:		LDI		R18,0x15
+L2:		LDI		R19,0xFF
+L3:		DEC		R19
+		BRNE	L3
+		DEC		R18
+		BRNE	L2
+		DEC		R17
+		BRNE	L1
+		RET
+
+CONVERT:				;converts a digit to 7seg code 
+		CPI		R16,0
+		BRNE	C1
+		LDI		R16,0x3F
+		RET
+C1:		CPI		R16,1
+		BRNE	C2
+		LDI		R16,0x06
+		RET
+C2:		CPI		R16,2
+		BRNE	C3
+		LDI		R16,0x5B
+		RET
+C3:		CPI		R16,3
+		BRNE	C4
+		LDI		R16,0x4F
+		RET
+C4:		CPI		R16,4
+		BRNE	C5
+		LDI		R16,0x66
+		RET
+C5:		CPI		R16,5
+		BRNE	C6
+		LDI		R16,0x6D
+		RET
+C6:		CPI		R16,6
+		BRNE	C7
+		LDI		R16,0x7D
+		RET
+C7:		CPI		R16,7
+		BRNE	C8
+		LDI		R16,0x07
+		RET
+C8:		CPI		R16,8
+		BRNE	C9
+		LDI		R16,0x7F
+		RET
+C9:		CPI		R16,9
+		BRNE	C10
+		LDI		R16,0x6F
+C10:	RET
+
