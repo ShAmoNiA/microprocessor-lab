@@ -1,0 +1,48 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega32</DEVICE>
+ <WORKING_DIR>C:\Users\asus\Desktop\New folder (5)\new</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m32def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <BEGIN><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>24</LINE></BEGIN>
+  <CONVERT><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>144</LINE></CONVERT>
+  <DELAY><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>133</LINE></DELAY>
+  <DECREASE><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>105</LINE></DECREASE>
+  <INC1><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>73</LINE></INC1>
+  <INC2><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>79</LINE></INC2>
+  <INC3><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>85</LINE></INC3>
+  <SET0><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>91</LINE></SET0>
+  <SET9><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>98</LINE></SET9>
+  <DEC1><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>112</LINE></DEC1>
+  <DEC2><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>118</LINE></DEC2>
+  <DEC3><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>124</LINE></DEC3>
+  <L1><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>134</LINE></L1>
+  <L2><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>135</LINE></L2>
+  <L3><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>136</LINE></L3>
+  <C1><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>149</LINE></C1>
+  <C2><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>153</LINE></C2>
+  <C3><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>157</LINE></C3>
+  <C4><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>161</LINE></C4>
+  <C5><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>165</LINE></C5>
+  <C6><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>169</LINE></C6>
+  <C7><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>173</LINE></C7>
+  <C8><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>177</LINE></C8>
+  <C9><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>181</LINE></C9>
+  <C10><FILE>C:\Users\asus\Desktop\New folder (5)\new\HW2.asm</FILE><LINE>184</LINE></C10>
+ </LABELS>
+</ASSEMBLER_INFO>
